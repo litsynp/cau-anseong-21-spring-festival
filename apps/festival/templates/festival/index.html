@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>중앙대학교 안성캠퍼스 '21 봄축제</title>
+    {% load static %}
+  </head>
+  <body>
+    {% block content %}
+
+    {% for content in contents %}
+    <p>
+      <a
+        href="{{content.url}}"
+        {% if content.popup == True %}
+        onclick="window.open(this.href, '_blank', 'width=560px,height=315px,toolbars=no,scrollbars=no,allowfullscreen'); return false;"
+        {% endif %}
+        >{{content.name}}</a
+      >
+    </p>
+    {% endfor %}
+
+    {% endblock %}
+  </body>
+</html>
