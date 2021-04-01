@@ -164,3 +164,6 @@ Thumbs.db #thumbnail cache on Windows
 
 ### vscode ###
 .vscode/*
+
+# macOS
+.DS_Store
