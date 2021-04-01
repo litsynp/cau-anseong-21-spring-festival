@@ -1,0 +1,28 @@
+#container__cau-road-map-bg {
+  /* width: 70%;
+  height: 200px;
+  overflow: hidden; */
+}
+#container__cau-road-map-bg img {
+  /* max-width: 100%;
+  height: auto;
+  display: block; */
+}
+body {
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  /* background-size: cover; */
+
+  /* overflow-y: hidden ! important; */
+  /* overflow-x: hidden ! important; */
+  /* background-color: #f8f8f8; */
+  /*background-image: url('index.png'); */
+  /*background-size: cover;*/
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+  /* background-position: right; */
+
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  background-size: contain;
+}
