@@ -7,14 +7,53 @@ def index(request):
     context = {
         'contents': [
             {
-                'name': 'Test YouTube Link that pops up',
-                'popup': True,
-                'url': 'https://www.youtube.com/embed/TNsSBhl_2LI',
+                'name': 'Test',
+                'popup': False,
+                'url': 'https://www.cau.ac.kr/',
+                'x': 1025,
+                'y': 180,
             },
             {
-                'name': 'Test YouTube Link 2 on current tab',
+                'name': 'Test',
                 'popup': False,
-                'url': 'https://www.youtube.com/embed/TNsSBhl_2LI',
+                'url': 'https://www.cau.ac.kr/',
+                'x': 830,
+                'y': 250,
+            },
+            {
+                'name': 'Test',
+                'popup': False,
+                'url': 'https://www.cau.ac.kr/',
+                'x': 1025,
+                'y': 400,
+            },
+            {
+                'name': 'Test',
+                'popup': False,
+                'url': 'https://www.cau.ac.kr/',
+                'x': 640,
+                'y': 470,
+            },
+            {
+                'name': 'Test',
+                'popup': False,
+                'url': 'https://www.cau.ac.kr/',
+                'x': 1035,
+                'y': 610,
+            },
+            {
+                'name': 'Test',
+                'popup': False,
+                'url': 'https://www.cau.ac.kr/',
+                'x': 500,
+                'y': 700,
+            },
+            {
+                'name': 'Test',
+                'popup': False,
+                'url': 'https://www.cau.ac.kr/',
+                'x': 775,
+                'y': 720,
             },
         ],
     }

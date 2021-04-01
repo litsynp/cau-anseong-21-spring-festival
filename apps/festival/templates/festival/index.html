@@ -3,33 +3,27 @@
     <title>중앙대학교 안성캠퍼스 '21 봄축제</title>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
-    <style>
-    body {
-      background-image: url("{% static "images/cau_road_map.jpeg" %}");
-    }
-    </style>
   </head>
   <body>
     {% block content %}
-    <!--
-    <div id="container__cau-road-map-bg">
-      <img src="{% static "images/cau_road_map.jpeg" %}" alt="cau road map" >
-    </div>
-    -->
 
-    <!--
-    {% for content in contents %}
-    <p>
-      <a
-        href="{{content.url}}"
-        {% if content.popup == True %}
-        onclick="window.open(this.href, '_blank', 'width=560px,height=315px,toolbars=no,scrollbars=no,allowfullscreen'); return false;"
-        {% endif %}
-        >{{content.name}}</a
-      >
-    </p>
-    {% endfor %}
-    -->
+    <div id="container__cau-road-map-bg">
+      <svg viewBox="0 0 1800 1800">
+        <image xlink:href="{% static "images/cau_road_map.jpeg" %}" alt="cau road map" />
+
+        <!-- 상->하 (좌->우) 방향으로 clickable rect 태그 배치 -->
+        {% for content in contents %}
+        <a
+          xlink:href="{{content.url}}"
+          target="_blank"
+          {% if content.popup == True %}
+          onclick="window.open(this.href, '_blank', 'width=560px,height=315px,toolbars=no,scrollbars=no,allowfullscreen'); return false;"
+          {% endif %}
+          ><rect width="150" height="150" x="{{content.x}}" y="{{content.y}}" /></a
+        >
+        {% endfor %}
+      </svg>
+    </div>
 
     {% endblock %}
   </body>

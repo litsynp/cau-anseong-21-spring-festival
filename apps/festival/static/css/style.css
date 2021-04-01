@@ -26,3 +26,31 @@ body {
   background-position: 0% 0%;
   background-size: contain;
 }
+
+/* Make svg image fit to window */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+svg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+image {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* end of fit to window */
+
+rect {
+  fill-opacity: 0.5;
+}
