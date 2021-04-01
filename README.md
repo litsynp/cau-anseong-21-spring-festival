@@ -4,6 +4,16 @@
 
 ## Installation
 
+### Set up `.env` file
+
+Create `.env` file with the template `.env.template`.
+
+```
+SECRET_KEY= # Your secret key
+DEBUG= # 0 or 1
+ALLOWED_HOSTS= # localhost, server domains, ...
+```
+
 ### Activate Python virtual environment
 
 All of the commands are to be run with virtual environment activated.
