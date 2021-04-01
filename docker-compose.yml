@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  # Django 컨테이너(서버)
+  web:
+    build:
+      context: ./
+    command: gunicorn -b 0.0.0.0:8000 --workers 3 mysite.wsgi:application
+    ports:
+      - 8000:8000
+    volumes:
+      - static_volume:/web/static
+      - ./:/web/
+    env_file:
+      - .env
+
+  # nginx 컨테이너(서버)
+  nginx:
+    build: ./nginx
+    ports:
+      - 80:8080
+    volumes:
+      - static_volume:/web/static
+    depends_on:
+      - web
+
+# 컨테이너 내려도 데이터 유지되도록 함
+volumes:
+  static_volume:
