@@ -58,3 +58,9 @@ def index(request):
         ],
     }
     return HttpResponse(template.render(context, request))
+
+
+def cau_image_page(request):
+    template = loader.get_template('festival/cau_image_page.html')
+    context = {}
+    return HttpResponse(template.render(context, request))
