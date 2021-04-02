@@ -3,6 +3,11 @@
     <title>방탈출 - 중앙대학교 안성캠퍼스 '21 봄축제</title>
     {% load static %}
     <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" /> -->
+
+    <!-- Google web font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
     <style>
       * {
         margin: 0;
@@ -20,6 +25,34 @@
     {% block content %}
 
     <div id="container__cau-image"><img id="cau_image" src="{% static "images/escape_room_85.jpg" %}"</div>
+
+    <div id="container__btn-ext-escape-room" style="margin-top: 3rem; margin-bottom: 3rem; display: flex; align-items: center; justify-content: center">
+      <a
+        id="btnhI4r4"
+        class="button-area"
+        href="https://mechuri.playthe.world/themes/2618eadd4b51af26dc1d"
+        style="
+          text-decoration: none;
+          background-color: #0f2f48;
+          padding: 10px 42px;
+          border: 1px solid #000000;
+          border-radius: 8px;
+          text-align: center !important;
+          display: inline-block;
+        "
+        target="_blank"
+        ><p>
+          <span style="font-size: 32px"
+            ><span style="color: #ffffff"
+              ><span style="font-family: 'Roboto', sans-serif;">방탈출 링크</span></span
+            ></span
+          ><br />
+        </p>
+        <style>
+          #btnhI4r4:hover {text-decoration: none;color:#ffffff !important;background-color:#000000 !important;border-color:#000000 !important;}#btnhI4r4:hover span,#btnhI4r4:hover p {color:#ffffff !important;
+        </style></a
+      >
+    </div>
 
     {% endblock %}
   </body>
