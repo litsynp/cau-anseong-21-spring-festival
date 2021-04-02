@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>방탈출 - 중앙대학교 안성캠퍼스 '21 봄축제</title>
+    {% load static %}
+    <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" /> -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #container__cau-image {
+      }
+      #cau_image {
+        width: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    {% block content %}
+
+    <div id="container__cau-image"><img id="cau_image" src="{% static "images/escape_room.png" %}"</div>
+
+    {% endblock %}
+  </body>
+</html>
