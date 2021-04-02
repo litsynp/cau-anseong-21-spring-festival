@@ -1,5 +1,6 @@
 from django.http import HttpResponse
 from django.template import loader
+from django.urls import reverse
 
 
 def index(request):
@@ -9,7 +10,7 @@ def index(request):
             {
                 'name': 'Test',
                 'popup': False,
-                'url': 'https://www.cau.ac.kr/',
+                'url': reverse('festival:cau_image_page'),
                 'x': 1025,
                 'y': 180,
             },
