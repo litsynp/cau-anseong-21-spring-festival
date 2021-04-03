@@ -1,15 +1,13 @@
-<html>
-  <head>
-    <title>틀린그림찾기 - 중앙대학교 안성캠퍼스 '21 봄축제</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/subpage_style.css' %}" />
-  </head>
-  <body>
-    {% block content %}
+{% extends "festival/subpage_template.html" %}
+{% load static %}
 
-    <div id="container__cau-image"><img id="cau_image" src="{% static "images/photo_puzzle_1_85.jpg" %}"</div>
-    <div id="container__cau-image"><img id="cau_image" src="{% static "images/photo_puzzle_2_85.jpg" %}"</div>
+{% block title %}틀린그림찾기{% endblock %}
 
-    {% endblock %}
-  </body>
-</html>
+{% block content %}
+
+<div id="container__cau-image">
+  <img id="cau_image" src="{% static "images/photo_puzzle_1_85.jpg" %}" />
+  <img id="cau_image" src="{% static "images/photo_puzzle_2_85.jpg" %}" />
+</div>
+
+{% endblock %}

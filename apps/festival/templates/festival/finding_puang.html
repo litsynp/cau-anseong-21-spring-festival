@@ -1,14 +1,12 @@
-<html>
-  <head>
-    <title>푸앙이를 찾아라 - 중앙대학교 안성캠퍼스 '21 봄축제</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/subpage_style.css' %}" />
-  </head>
-  <body>
-    {% block content %}
+{% extends "festival/subpage_template.html" %}
+{% load static %}
 
-    <div id="container__cau-image"><img id="cau_image" src="{% static "images/finding_puang_full_85.jpg" %}"</div>
+{% block title %}푸앙이를 찾아라{% endblock %}
 
-    {% endblock %}
-  </body>
-</html>
+{% block content %}
+
+<div id="container__cau-image">
+  <img id="cau_image" src="{% static "images/finding_puang_full_85.jpg" %}" />
+</div>
+
+{% endblock %}

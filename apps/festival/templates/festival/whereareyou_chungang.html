@@ -1,14 +1,14 @@
-<html>
-  <head>
-    <title>중앙아 어딨니? - 중앙대학교 안성캠퍼스 '21 봄축제</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/subpage_style.css' %}" />
-  </head>
-  <body>
-    {% block content %}
+{% extends "festival/subpage_template.html" %}
+{% load static %}
 
-    <div id="container__cau-image"><img id="cau_image" src="{% static "images/whereareyou_chungang.jpeg" %}"</div>
+{% block title %}중앙아 어딨니?{% endblock %}
 
-    {% endblock %}
-  </body>
-</html>
+{% block content %}
+
+<div id="container__cau-image">
+  <div id="container__cau-image">
+    <img id="cau_image" src="{% static "images/whereareyou_chungang.jpeg" %}" />
+  </div>
+</div>
+
+{% endblock %}
