@@ -5,28 +5,19 @@
     <!-- <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" /> -->
 
     <!-- Google web font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      #container__cau-image {
-      }
-      #cau_image {
-        width: 100%;
-        object-fit: contain;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/subpage_style.css' %}" />
   </head>
   <body>
     {% block content %}
 
     <div id="container__cau-image"><img id="cau_image" src="{% static "images/escape_room_85.jpg" %}"</div>
 
-    <div id="container__btn-ext-escape-room" style="margin-top: 3rem; margin-bottom: 3rem; display: flex; align-items: center; justify-content: center">
+    <div
+      id="container__btn-ext-escape-room"
+      style="margin-top: 3rem; margin-bottom: 3rem; display: flex; align-items: center; justify-content: center"
+    >
       <a
         id="btnhI4r4"
         class="button-area"
@@ -44,7 +35,7 @@
         ><p>
           <span style="font-size: 32px"
             ><span style="color: #ffffff"
-              ><span style="font-family: 'Roboto', sans-serif;">방탈출 링크</span></span
+              ><span style="font-family: 'Roboto', sans-serif">방탈출 링크</span></span
             ></span
           ><br />
         </p>

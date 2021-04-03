@@ -1,0 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#container__cau-image {
+}
+#cau_image {
+  width: 100%;
+  object-fit: contain;
+}
