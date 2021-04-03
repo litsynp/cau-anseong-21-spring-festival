@@ -6,6 +6,7 @@ body {
   /* width: 100vw; */
   margin: 0;
   overflow-y: auto;
+  background-color: #F3F5FC;
 }
 #container__cau-road-map-bg {
   /* min-height: 59px; */
