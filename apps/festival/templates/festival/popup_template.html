@@ -4,22 +4,21 @@
 <!-- 레이어팝업1 시작 -->
 <div
   id="layerPopup0"
+  class="container__popup"
   style="top: 15px; position: absolute; display: none; cursor: move"
   onmouseover="dragObj=layerPopup0; drag=1;move=0"
   onMouseOut="drag=0"
 >
-  <div class="container__popup">
-    <!-- ## Contents Start(++)--------------------------------------------->
-    <img class="popup-image" src="{% static "images/popup_1_70.jpg" %}" usemap="#popup" />
-    <!-- ## Contents End(++)--------------------------------------------->
-    <div class="link_w" style="background-color: #000">
-      <input type="checkbox" name="Popup0" onClick="javascript:closeWin('0');" style="cursor: hand" />&nbsp;하루동안
-      열지 않음
-      <div class="link_w" style="position: absolute; bottom: 0; right: 0">
-        <span onClick="document.all.layerPopup0.style.display='none'" style="cursor: hand; text-align: right"
-          ><b>Close</b></span
-        >
-      </div>
+  <!-- ## Contents Start(++)--------------------------------------------->
+  <img class="popup-image" src="{% static "images/popup_1_70.jpg" %}" usemap="#popup" />
+  <!-- ## Contents End(++)--------------------------------------------->
+  <div class="link_w" style="background-color: #000">
+    <input type="checkbox" name="Popup0" onClick="javascript:closeWin('0');" style="cursor: hand" />&nbsp;하루동안 열지
+    않음
+    <div class="link_w" style="position: absolute; bottom: 0; right: 0">
+      <span onClick="document.all.layerPopup0.style.display='none'" style="cursor: hand; text-align: right"
+        ><b>Close</b></span
+      >
     </div>
   </div>
 </div>
@@ -29,28 +28,26 @@
 <!-- 레이어팝업2 시작 -->
 <div
   id="layerPopup1"
+  class="container__popup"
   style="top: 15px; position: absolute; display: none; cursor: move"
   onmouseover="dragObj=layerPopup1; drag=1;move=0"
   onMouseOut="drag=0"
 >
-  <div class="container__popup">
-    <!-- ## Contents Start(++)--------------------------------------------->
-    <img class="popup-image" src="{% static "images/popup_1_70.jpg" %}" usemap="#popup" />
-    <!-- ## Contents End(++)--------------------------------------------->
-    <div class="link_w" style="background-color: #000">
-      <input type="checkbox" name="Popup1" onClick="javascript:closeWin('1');" style="cursor: pointer" />&nbsp;하루동안
-      열지 않음
-      <div class="link_w" style="position: absolute; bottom: 0; right: 0">
-        <span onClick="document.all.layerPopup1.style.display='none'" style="cursor: pointer; text-align: right"
-          ><b>Close</b></span
-        >
-      </div>
+  <!-- ## Contents Start(++)--------------------------------------------->
+  <img class="popup-image" src="{% static "images/popup_1_70.jpg" %}" usemap="#popup" />
+  <!-- ## Contents End(++)--------------------------------------------->
+  <div class="link_w" style="background-color: #000">
+    <input type="checkbox" name="Popup1" onClick="javascript:closeWin('1');" style="cursor: pointer" />&nbsp;하루동안
+    열지 않음
+    <div class="link_w" style="position: absolute; bottom: 0; right: 0">
+      <span onClick="document.all.layerPopup1.style.display='none'" style="cursor: pointer; text-align: right"
+        ><b>Close</b></span
+      >
     </div>
   </div>
 </div>
 
 <!-- 레이어팝업2 끝 -->
-
 <script src="{% static "js/popup_control.js" %}"></script>
 
 {% endblock %}

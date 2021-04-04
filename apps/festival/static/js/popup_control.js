@@ -85,9 +85,9 @@ if (getCookie("Popup1") != "done") {
 }
 
 layerPopup0 = document.getElementById("layerPopup0");
-layerPopup0.style.top = 70;
-layerPopup0.style.left = 70;
+layerPopup0.style.top = 20;
+layerPopup0.style.left = 20;
 
 layerPopup1 = document.getElementById("layerPopup1");
-layerPopup1.style.top = 500;
-layerPopup1.style.left = 70;
+layerPopup1.style.top = 400;
+layerPopup1.style.left = 20;
