@@ -128,3 +128,11 @@ def whereareyou_chungang(request):
     template = loader.get_template('festival/whereareyou_chungang.html')
     context = {}
     return HttpResponse(template.render(context, request))
+
+def popup_test(request):
+    """
+    팝업 테스트용 functional view
+    """
+    template = loader.get_template('festival/popup_example.html')
+    context = {}
+    return HttpResponse(template.render(context, request))

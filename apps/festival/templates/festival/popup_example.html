@@ -1,0 +1,88 @@
+{% load static %}
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>팝업 테스트 페이지</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicons/favicon.ico' %}"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/popup.css' %}" />
+
+    <!-- Google web font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <!-- 레이어팝업 시작-->
+
+    <!-- 레이어팝업1 시작 -->
+    <div
+      id="layerPopup0"
+      style="top: 15px; position: absolute; display: none; cursor: move"
+      onmouseover="dragObj=layerPopup0; drag=1;move=0"
+      onMouseOut="drag=0"
+    >
+      <div>
+        <div style="position: absolute; top: 261px; left: 41px; width: 300; height: 100"></div>
+        <!-- ## Contents Start(++)--------------------------------------------->
+        <table width="400" height="400" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+              <img src="{% static "images/popup_1_70.jpg" %}" width="400" height="400" border="0" usemap="#popup" />
+            </td>
+          </tr>
+        </table>
+        <!-- ## Contents End(++)--------------------------------------------->
+      </div>
+      <div class="link_w" style="background-color: #000">
+        <input type="checkbox" name="Popup0" onClick="javascript:closeWin('0');" style="cursor: hand" />&nbsp;하루동안 열지 않음
+        <div class="link_w" style="position: absolute; bottom: 0; right: 0">
+          <span onClick="document.all.layerPopup0.style.display='none'" style="cursor: hand; text-align: right"
+            ><b>Close</b></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- 레이어팝업1 끝 -->
+
+    <!-- 레이어팝업2 시작 -->
+    <div
+      id="layerPopup1"
+      style="top: 15px; position: absolute; display: none; cursor: move"
+      onmouseover="dragObj=layerPopup1; drag=1;move=0"
+      onMouseOut="drag=0"
+    >
+      <div>
+        <div style="position: absolute; top: 261px; left: 41px; width: 300; height: 100"></div>
+        <!-- ## Contents Start(++)--------------------------------------------->
+        <table width="400" height="400" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+              <img src="{% static "images/popup_1_70.jpg" %}" width="400" height="400" border="0" usemap="#popup" />
+            </td>
+          </tr>
+        </table>
+        <!-- ## Contents End(++)--------------------------------------------->
+      </div>
+
+      <div class="link_w" style="background-color: #000">
+        <input
+          type="checkbox"
+          name="Popup1"
+          onClick="javascript:closeWin('1');"
+          style="cursor: pointer"
+        />&nbsp;하루동안 열지 않음
+        <div class="link_w" style="position: absolute; bottom: 0; right: 0">
+          <span onClick="document.all.layerPopup1.style.display='none'" style="cursor: pointer; text-align: right"
+            ><b>Close</b></span
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- 레이어팝업2 끝 -->
+  </body>
+  <script src="{% static "js/popup_control.js" %}"></script>
+</html>

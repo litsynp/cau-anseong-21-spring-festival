@@ -1,0 +1,51 @@
+.link_w {
+  font-size: 11px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.link_w A:link {
+  font-size: 11px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.link_w A:visited {
+  font-size: 11px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.link_w A:active {
+  font-size: 11px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.link_w A:hover {
+  font-size: 11px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  text-decoration: underline;
+}
+.container__popup {
+  width: 400;
+  height: 400;
+}
+.popup-image {
+  width: 400;
+  height: 400;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

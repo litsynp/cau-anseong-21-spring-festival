@@ -15,4 +15,6 @@ urlpatterns = [
     path('trickywords/', views.trickywords, name='trickywords'),
     path('whereareyou-chungang/', views.whereareyou_chungang,
          name='whereareyou_chungang'),
+    path('popup-test/', views.popup_test,
+         name='popup_test'),
 ]
