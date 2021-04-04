@@ -4,10 +4,14 @@
     {% load static %}
     <link rel="shortcut icon" type="image/png" href="{% static 'favicons/favicon.ico' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'css/popup.css' %}" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
+
+    {% include 'festival/popup_template.html' %}
+
     {% block content %}
 
     <div id="container__cau-road-map-bg">
@@ -29,5 +33,6 @@
     </div>
 
     {% endblock %}
+
   </body>
 </html>
