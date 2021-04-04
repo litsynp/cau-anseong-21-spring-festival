@@ -1,7 +1,14 @@
 <html>
+  {% load static %}
+
   <head>
     <title>중앙대학교 안성캠퍼스 '21 봄축제</title>
-    {% load static %}
+    <meta property="og:title" content="메인 페이지" />
+    <meta property="og:type" content="festival.index" />
+    <meta property="og:image" content="{% static "images/cau_road_map_85.jpg" %}" />
+    <meta property="og:description"
+          content="중앙대학교 안성캠퍼스 '21 봄축제 로드맵 웹사이트"/>
+
     <link rel="shortcut icon" type="image/png" href="{% static 'favicons/favicon.ico' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/popup.css' %}" />
